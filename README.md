@@ -1,23 +1,39 @@
-# IDGrid — Print-ready ID photo sheets in your browser
+# IDGrid — Print-ready ID photos in your browser
 
-A free, client-side web tool that tiles any photo into a print-ready grid and lets you download a high-resolution PNG instantly.
+A free, client-side tool that prepares any photo to exact ID/passport dimensions and outputs a 300 DPI-equivalent PNG. No uploads, no accounts, no server — everything runs locally in your browser.
 
-**No uploads. No servers. No accounts. Your photo never leaves your device.**
+---
+
+## Two modes
+
+**Photo grid** — tiles multiple copies onto a 10×15 cm print sheet with cut guides. Hand this file to any photo printer or pharmacy kiosk and cut them out yourself.
+
+**Single photo** — crops and resizes to one exact ID photo. Use this for digital submissions (visa applications, government portals) or when a printer will handle the layout.
 
 ---
 
 ## How to use
 
-1. Open the site and upload your photo (JPG, PNG, or WEBP)
-2. Select your country's preset or enter custom dimensions
-3. Click **Generate photo sheet**
-4. Download the PNG and send it to any 10×15 cm photo printer
+1. Open the site
+2. Choose **Photo grid** or **Single photo**
+3. Select a country preset or enter custom dimensions
+4. Upload your photo
+5. Click **Generate photo**
+6. Download the PNG
 
-**Print tip:** always set print scale to **100% / actual size** — never "fit to page."
+**On iPhone:** the image will appear below the button — long-press it and tap **Save to Photos**, then print from there.
 
 ---
 
-## Supported formats
+## Print instructions (grid mode)
+
+- Send the downloaded PNG to a **10×15 cm / 4×6 inch** print
+- At the printer, set scale to **100% / actual size** — never "fit to page"
+- Cut along the grey lines
+
+---
+
+## Country presets
 
 | Country / Document | Width | Height |
 |---|---|---|
@@ -33,19 +49,19 @@ Custom dimensions are supported — enter any width and height in the config pan
 
 ## Photo requirements
 
-IDGrid handles layout only. For your photo to be accepted by authorities, make sure it meets the standard requirements for your document type:
+IDGrid handles cropping and layout only. For your photo to be accepted, make sure it meets the standard requirements for your document type:
 
 - Plain light background (white or off-white)
 - Neutral front-facing expression, eyes open
 - No sunglasses or head coverings (unless for religious reasons)
-- Head and upper shoulders visible, centred in frame
+- Head and upper shoulders centred in frame
 - Taken within the last 6 months
 
 ---
 
 ## Privacy
 
-All processing runs locally in your browser using the Canvas API. No image data is transmitted to any server at any point.
+All processing runs locally in your browser using the HTML Canvas API. No image data is ever sent to any server.
 
 ---
 
